@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "poppins";
+  background: rgba(109, 137, 215, 1);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    conic-gradient(from 45deg, rgba(109, 137, 215, 1), rgba(88, 228, 210, 1));
+}
+
+#main-page {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 80vw;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    text-align: center;
+    font-size: 45px;
+    @media (max-width: 800px) {
+      font-size: 35px;
+    }
+  }
+}
+
+.upper {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  .select {
+    flex: 1;
+    color: black;
+  }
+}
+
+.center {
+  display: flex;
+  gap: 100px;
+  margin-top: 20px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+  textarea {
+    flex: 1;
+    min-height: 250px;
+    max-height: 500px;
+    padding: 10px;
+    font-family: "poppins";
+    font-size: 17px;
+    &:disabled{
+      color: white;
+    }
+  }
+
+
+}
+
+.loading{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" )!important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+#translate-btn {
+  margin-top: 20px;
+}
